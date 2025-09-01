@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --primary-color: #00b383;
+    --primary-color-dark: #009970;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --white: #ffffff;
+    --max-width: 100%;
+    --header-font: "Bebas Neue", sans-serif;
+}
+
+.NewTravelBtn{
+    border: 2px solid beige !important;
+    padding: 10px 20px 10px 20px !important;
+    text-align: center;
+    color: #f9f9f9;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.landing-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+}
+
+.text h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #009970;
+    font-style: italic;
+}
+
+.text p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+
+
+
+
+
+
+.space {
+    position: relative;
+    height: 30vh;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+
+.text-layer {
+    position: relative;
+    text-align: center;
+}
+
+
+.foreground-text {
+    font-size: 3em;
+    color: #181C14;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Affordable Plans Styling */
+.affordable-plans {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.affordable-plans .section-title {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.affordable-plans .section-subtitle {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.affordable-plans .plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.affordable-plans .plan-card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.affordable-plans .plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.affordable-plans .plan-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.affordable-plans .plan-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.affordable-plans .plan-header h4 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.affordable-plans .popular-badge {
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.affordable-plans .plan-price {
+    font-size: 2rem;
+    color: var(--primary-color-dark);
+    margin: 10px 0;
+}
+
+.affordable-plans .plan-price span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.affordable-plans .plan-description {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.affordable-plans .plan-features {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 0;
+    color: var(--text-dark);
+}
+
+.affordable-plans .plan-features li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.affordable-plans .plan-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card hr {
+    display: block; 
+    width: 100%; 
+    margin: 10px auto; 
+    border: none; 
+    height: 2px; 
+    background-color: #009970;
+    border-radius: 5px; 
+}
+
+.affordable-plans .plan-button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+
+
+
+
+
+
+
+
+
+
+.service-list-card {
+    background-image: url('assets/testimonial bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.service-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+    color: var(--primary-color-dark);
+    text-decoration: none;
+    border: 2px solid #009970;
+    border-radius: 50px;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.card a::after {
+    content: ' \2192'; /* Unicode for right arrow */
+    font-size: 1em;
+    transition: transform 0.3s ease;
+}
+
+.card a:hover::after {
+    transform: translateX(5px);
+}
+
+
+
+
+
+
+
